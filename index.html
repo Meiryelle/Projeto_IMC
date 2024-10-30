@@ -1,0 +1,37 @@
+<body>
+
+    <nav class="navbar">
+        <h1>Minha Lista de Tarefas</h1>
+        <ul>
+            <li><a href="#home" onclick="showSection('home')">Início</a></li>
+            <li><a href="#tasks" onclick="showSection('tasks')">Tarefas</a></li>
+            <li><a href="#about" onclick="showSection('about')">Sobre</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="home">
+        <h2>Bem-vindo à Lista de Tarefas</h2>
+        <p>Este é um aplicativo simples para gerenciar suas tarefas diárias. Use a aba "Tarefas" para adicionar, marcar como concluídas e excluir tarefas.</p>
+    </section>
+
+
+    <section id="tasks" class="hidden">
+        <h2>Lista de Tarefas</h2>
+        
+        <input type="text" id="taskTitle" placeholder="Título da Tarefa">
+        <input type="date" id="taskDate" placeholder="Data">
+        <input type="time" id="taskTime" placeholder="Horário">
+        <textarea id="taskDescription" placeholder="Descrição da Tarefa"></textarea>
+        <button onclick="addTask()">Adicionar Tarefa</button>
+
+        <ul id="taskList"></ul>
+    </section>
+
+    <section id="about" class="hidden">
+        <h2>Sobre este Projeto</h2>
+        <p>Este projeto foi desenvolvido para praticar a criação de uma lista de tarefas com HTML, CSS e JavaScript. A navBar facilita a navegação entre as seções.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
